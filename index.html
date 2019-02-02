@@ -29,6 +29,11 @@
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
   <script src="js/progressbar.js"></script>
+  <script src="js/progressbar.min.js"></script>
+  <script src="js/jquery.waypoints.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="js/theme.js"></script>
+<script type="text/javascript" src="js/map-script.js"></script>
 
 
    <!-- favicons
@@ -126,7 +131,7 @@
 
    				<img src="images/profile-pic.jpg" alt="Profile Picture">
 
-   				<p class="lead">"Je suis actuellement étudiant en BTS SIO en spécialisation Solutions logiciel et applications Métiers. Intéressé par le developpement et la Cybersecurité, je souhaiterais effectuer une formation afin de me spécialiser dans ce domaine !"</p>
+   				<p class="lead">"Je suis actuellement étudiant en BTS SIO en spécialisation Solutions logiciel et applications Métiers. Intéressé par le developpement et la Cybersecurité, je souhaiterais effectuer une formation afin de me spécialiser dans ces domaines !"</p>
    			</div>
 
    		</div>
@@ -162,77 +167,89 @@
    				</li>
 
    			</ul> <!-- /info-list -->
+        <div class="cate">
+          <strong><u>OS :</u></strong>
+        </div>
+        <ul class="skill-bars">
+          <li>
+           <div class="progress percent70"><span>95%</span></div>
+           <strong>Windows</strong>
+          </li>
+				   <li>
+				   	<div class="progress percent80"><span>90%</span></div>
+				   	<strong>MacOS X</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent60"><span>75%</span></div>
+				   	<strong>Debian</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Linux Red Hat (CentOs)</strong>
+				   </li>
+				</ul> <!-- /skill-bars -->
 
    		</div>
 
    		<div class="col-six tab-full">
 
    			<h3>Compétence en informatique</h3>
-   			<p>Mes connaissances en informatique ce sont développées lors de mes stages mais aussi lors de mes formations scolaires..</p>
+   			<p>Mes connaissances en informatique ce sont développées lors de mes stages mais aussi lors de mes formations scolaires.</p>
         <div class="cate">
-          <strong>logiciels</strong>
+          <strong><u>Logiciel :</u></strong>
         </div>
 				<ul class="skill-bars">
+          <li>
+           <div class="progress percent70"><span>70%</span></div>
+           <strong>Visual Studio</strong>
+          </li>
 				   <li>
-             <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,100,100,100" rel="stylesheet" type="text/css">
-              <div id="container" style="margin: 20px;width: 80px;height: 80px;position: relative;"></div>
-
-              <strong>HTML5</strong>
-              <script>
-
-var bar = new ProgressBar.Circle(container, {
-  color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 4,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#aaa', width: 1 },
-  to: { color: '#333', width: 4 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2rem';
-
-bar.animate(0.5);  // Number from 0.0 to 1.0
-              </script>
-
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>Eclipse</strong>
 				   </li>
 				   <li>
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>CSS3</strong>
+				   	<div class="progress percent60"><span>60%</span></div>
+				   	<strong>Intellij</strong>
 				   </li>
 				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>JQuery</strong>
+				   	<div class="progress percent75"><span>80%</span></div>
+				   	<strong>Git</strong>
+				   </li>
+				</ul> <!-- /skill-bars -->
+        <div class="cate">
+          <strong><u>Langages :</u></strong>
+        </div>
+				<ul class="skill-bars">
+          <li>
+           <div class="progress percent50"><span>50%</span></div>
+           <strong>C</strong>
+          </li>
+				   <li>
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>C#</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>Java</strong>
 				   </li>
 				   <li>
 				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>PHP</strong>
+				   	<strong>HTML / CSS</strong>
 				   </li>
-				   <li>
-
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Wordpress</strong>
+           <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>SQL</strong>
 				   </li>
-
+           <li>
+				   	<div class="progress percent40"><span>40%</span></div>
+				   	<strong>PL/SQL</strong>
+				   </li>
+           <li>
+				   	<div class="progress percent75"><span>80%</span></div>
+				   	<strong>UML</strong>
+				   </li>
 				</ul> <!-- /skill-bars -->
+
 
    		</div>
 
@@ -662,36 +679,6 @@ bar.animate(0.5);  // Number from 0.0 to 1.0
 
 	</section> <!-- /portfolio -->
 
-
-	<!-- CTA Section
-   ================================================== -->
-	<section id="cta" class="grey-section">
-
-   	<div class="row cta-content">
-
-   		<div class="col-twelve section-ads">
-
-	     		<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
-
-		      <p class="lead">
-		      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-				Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
-				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->
-				</p>
-
-				<div class="action">
-			      <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
-		      </div>
-
-   		</div>
-
-   	</div> <!-- /cta-content -->
-
-   </section> <!-- /cta -->
-
-
-	<!-- services Section
-   ================================================== -->
 	<section id="services">
 
 		<div class="overlay"></div>
@@ -929,10 +916,6 @@ bar.animate(0.5);  // Number from 0.0 to 1.0
    		<div class="col-twelve">
 
    			<h5>Contact</h5>
-   			<h1>I'd Love To Hear From You.</h1>
-
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-
    		</div>
    	</div> <!-- /section-intro -->
 
@@ -945,21 +928,21 @@ bar.animate(0.5);  // Number from 0.0 to 1.0
       			<fieldset>
 
                   <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Nom" value="" minlength="2" required="">
                   </div>
                   <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="E-mail" value="" required="">
 	               </div>
                   <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Sujet" value="">
 	               </div>
                   <div class="form-field">
 	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
 	               </div>
                  <div class="form-field">
-                     <button class="submitform">Submit</button>
+                     <button class="submitform">Envoie</button>
                      <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>
+                        <div class="text-loader">Envoie en cours...</div>
        				      <div class="s-loader">
 								  	<div class="bounce1"></div>
 								  	<div class="bounce2"></div>
@@ -976,7 +959,7 @@ bar.animate(0.5);  // Number from 0.0 to 1.0
             </div>
             <!-- contact-success -->
       		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+               <i class="fa fa-check"></i>Votre message a été envoyé!<br>
       		</div>
 
          </div> <!-- /col-twelve -->
@@ -994,9 +977,8 @@ bar.animate(0.5);  // Number from 0.0 to 1.0
    			<h5>Where to find me</h5>
 
    			<p>
-            1600 Amphitheatre Parkway<br>
-            Mountain View, CA<br>
-            94043 US
+            Beynes, 78650<br>
+            FRANCE
             </p>
 
    		</div>
@@ -1007,10 +989,9 @@ bar.animate(0.5);  // Number from 0.0 to 1.0
    				<i class="icon-mail"></i>
    			</div>
 
-   			<h5>Email Me At</h5>
+   			<h5>Par E-mail</h5>
 
-   			<p>someone@kardswebsite.com<br>
-			   	info@kardswebsite.com
+   			<p>sebastien.lejeune6@gmail.com<br>
 			   </p>
 
    		</div>
@@ -1021,11 +1002,9 @@ bar.animate(0.5);  // Number from 0.0 to 1.0
    				<i class="icon-phone"></i>
    			</div>
 
-   			<h5>Call Me At</h5>
+   			<h5>Par téléphone</h5>
 
-   			<p>Phone: (+63) 555 1212<br>
-			   	Mobile: (+63) 555 0100<br>
-			     	Fax: (+63) 555 0101
+   			<p>Phone: (+33) 6 61 31 68 24<br>
 			   </p>
 
    		</div>
@@ -1044,19 +1023,16 @@ bar.animate(0.5);  // Number from 0.0 to 1.0
      		<div class="col-six tab-full pull-right social">
 
      			<ul class="footer-social">
-			      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			      <li><a href="#"><i class="fa fa-behance"></i></a></li>
-			      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-			      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			      <li><a href="#"><i class="fa fa-github"></i></a></li>
+			      <li><a href="#"><i class="fa fa-gitlab"></i></a></li>
+			      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 			   </ul>
 
 	      </div>
 
       	<div class="col-six tab-full">
 	      	<div class="copyright">
-		        	<span>© Copyright Kards 2016.</span>
-		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+		        	<span>© Copyright Sébastien ML 2019.</span>
 		         </div>
 	      	</div>
 
@@ -1076,6 +1052,7 @@ bar.animate(0.5);  // Number from 0.0 to 1.0
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script type="text/javascript" src="js/skills-master/jquery.skills.js"></script>
 
 </body>
 
