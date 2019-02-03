@@ -945,6 +945,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .skill-bars li {
 	height: .6rem;
+	background: #a1a1a1;
 	width: 100%;
 	margin-bottom: 6rem;
 	padding: 0;
@@ -1967,7 +1968,7 @@ header .logo a {
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 .popup-modal .link-box a:hover {
-	background: #cc005f;
+	background: #19d425;
 	border: none;
 }
 @media only screen and (max-width:600px) {
