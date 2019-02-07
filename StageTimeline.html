@@ -175,30 +175,35 @@
         <h3><u>PRODUCTION DE SERVICE</u></h3>
 
    		</div>
-      <p><i>A1.1.2 -  Étude de l’impact de l’intégration d’un service sur le systèmeinformatique  </i></p>
-      <p><i><strong>A1.2.4 - Détermination des tests nécessaires à la validation d'un service</strong></i></p>
+      <p id="A112"><i><strong>A1.1.2 -  Étude de l’impact de l’intégration d’un service sur le système informatique</strong></i></p>
+      <p style="font-size: 90%">Le back est structuré en service web. Il fallait donc que je prenne en compte l'impact qu'aurait pu avoir mon intégration sur la structure.</p>
+      <img src="competences/stage2/structureBack.png">
+      <p style="font-size: 90%">Le back .</p>
+      <p id="A124"><i><strong>A1.2.4 - Détermination des tests nécessaires à la validation d'un service</strong></i></p>
       <p style="font-size: 90%">Pour pouvoir vérifier et valider les informations développées et récupérées par le back et le front. Il faut effectuer des tests d'intégrations.</p>
       <p style="font-size: 90%"> Tout d'abord pour le back, il faut créer une documentation, des utilisateurs pour permettre la création des activités. Il faut donc verifier dans un premier temps que la documentation est bien à l'état <code>CREATED</code> pour ensuite lui ajouter des commentaire que j'ai créé au préalable. L'état devra donc etre ensuite <code>MODIFIED</code>. Et un dernier cas à tester, le cas si la documentation est donc introuvable à l'url <code>/api/documentation/{documentationId}/activities</code> il faut indiquer l'erreur <i>500</i>. Si ces tests sont fonctionnels l'intégration du back peut être éffectuée.</p>
       <p style="font-size: 90%"> Enfin pour le front, il faut créer une documentation, des utilisateurs pour permettre la création des activités aussi. Dans ce cas il faut verifier les actions au niveau des composants Angular. D'abord si les composants sont bien générer lors de leurs appels. Ensuite si les badges crée</p>
-      <p><i><strong>A1.3.4 - Déploiement d’un service</strong></i></p>
+      <p id="A134"><i><strong>A1.3.4 - Déploiement d’un service</strong></i></p>
       <p style="font-size: 90%">Gerrit est une application Web permettant de faire de la relecture de code et valider la qualité pour une bonne intégration des services. Un code est approuvé si le la qualité de la strucuture est bien respectée mais aussi si le code arrive a <i>build</i>. Ensuite le chef technique verifie à son tour.</p>
       <img src="competences/stage2/review.png">
-      <p><i><strong>A1.4.1 - Participation à un projet</strong></i></p>
+      <p id="A141"><i><strong>A1.4.1 - Participation à un projet</strong></i></p>
       <p style="font-size: 90%">Suivi de l'évolution du projet et des phases de développement. Attribution des taches et définition des poids pour en établir la durée du projet.</p>
       <img src="competences/stage2/edcBoard.png">
-      <p><i>A1.4.2 - Évaluation des indicateurs de suivi d'un projet et justification  </i></p>
+      <p id="A142"><i><strong>A1.4.2 - Évaluation des indicateurs de suivi d'un projet et justification </strong></i></p>
+      <p style="font-size: 90%">Avant de commencer le projet j'ai du identifier la difficulté de chaque tâches a réaliser. Cela permet à mon chef de projet d'établir le temps accorder à la réalisation du projet.</p>
+      <img src="competences/stage2/StoryPoint.png">
       <div class="col-twelve">
         <br>
         <h3><u>FOURNITURE DE SERVICE</u></h3>
 
    		</div>
-      <p><i><strong>A2.3.1 - Identification, qualification et évaluation d'un problème</strong></i></p>
+      <p id="A231"><i><strong>A2.3.1 - Identification, qualification et évaluation d'un problème</strong></i></p>
       <p style="font-size: 90%">J'ai provoqué cette erreur à cause d'une mauvaise importation des modules, car le composant possède certaines dépendances pour fonctionner. Comme par exemple l'extrait suivant :</p>
       <script src="https://gist.github.com/SebastienML/634ffb81781982f0eebd67db9242caed.js"></script>
       <img src="competences/stage2/errModule.png">
       <p style="font-size: 90%">L'erreur juste en dessus était la plus fréquente, ce problème est du a une mauvaise attribution des variables lors du data Binding.</p>
       <img src="competences/stage2/errInput.png">
-      <p><i><strong>A2.3.2 - Proposition d'amélioration d'un service</strong></i></p>
+      <p id="A232"><i><strong>A2.3.2 - Proposition d'amélioration d'un service</strong></i></p>
       <p style="font-size: 90%">Une fois la timeline mis en place, j'ai remarqué les fichiers commençaient a se multiplier. Alors qu'ils avaient tous une base commune. Ils prennent tous en entrée des activités pour se construire. </p>
       <img src="competences/stage2/structureInitiale.png">
       <p style="font-size: 90%">Le but pour moi était donc de faire du <i>refactoring</i>, c'est à dire de faire un composant générique qui serait utilisable pour chaque composants et même pour les futurs timeline. Un composant simple et réutilisable. C'est ainsi que j'en ai déduit l'architecture suivante :</p>
@@ -210,50 +215,66 @@
         <h3><u>CONCEPTION ET MAINTENANCE DE SOLUTIONS APPLICATIVES</u></h3>
 
    		</div>
-      <p><i><strong>A3.1.3 - Prise en compte du niveau de sécurité nécessaire à une infrastructure</strong></i></p>
+      <p id="A313"><i><strong>A3.1.3 - Prise en compte du niveau de sécurité nécessaire à une infrastructure</strong></i></p>
       <p style="font-size: 90%">J'ai mis en place un système de verification des droits d'accès permettant de filtrer l'accéssibilité aux données de la timeline.</p>
       <p style="font-size: 90%">Ce processus est applicable pour tout les roles de l'application attribuables</p>
       <script src="https://gist.github.com/SebastienML/48cb6b5c32bca92a40fabcfcc0e40c88.js"></script>
-      <p><i>A4.1.1 - Proposition d'une solution applicative</i></p>
+      <p id="A411"><i><strong>A4.1.1 - Proposition d'une solution applicative</strong></i></p>
       <p style="font-size: 90%">La solution applicative du projet est la suivante. Elle a été développé en Angular pour le Front et en JAVA pour le Back. C'est une ligne anti-chronologique, permettant de suivre l'historique de documents (C'est à dire, les actions qui ont été fait sur le document).</p>
       <p style="font-size: 90%">Le besoins du projet était les suivants : Affichage de l'avatar, affichage du nom complet, affichage des activités alternivement (gauche/droite), affichage des icons en focntions de l'action réalisée.</p>
       <img src="competences/stage2/Capture_Maquette1.png">
-      <p><i>A4.1.2 - Conception ou adaptation de l'interface utilisateur d'une solution</i></p>
+      <p id="A412"><i><strong>A4.1.2 - Conception ou adaptation de l'interface utilisateur d'une solution</strong></i></p>
+      <p style="font-size: 90%">L'interface pour l'utilisateur est relativement simpliste, elle présente une ligne anti-chrionoilogique permettant d'y presenter l'hisotirques des actions éfféctuées sur le document en cours.</p>
+      <p style="font-size: 90%">Pour chaque activité, il est indiquer l'action réalisé mais aussi le nom et prenom ainsi que son avatar en plus.</p>
+      <p style="font-size: 90%">Le boutton <i>View More</i> permet à l'utilisateur d'afficher 10 activités en plus cela permet d'éviter de charger et d'afficher toutes les activités d'un coup (Surcharge/Crash si 100000+ d'activités).</p>
       <img src="competences/stage2/cf_timeline.png">
-      <p><i><strong>A4.1.4 - Définition des caractéristiques d'une solution applicative</strong></i></p>
+      <p id="A414"><i><strong>A4.1.4 - Définition des caractéristiques d'une solution applicative</strong></i></p>
       <p style="font-size: 90%">Description d'une des taches du projet, en fonction du besoin du chef de projet afin de l'intégrer.</p>
       <img src="competences/stage2/spec1.png">
       <img src="competences/stage2/spec2.png">
       <img src="competences/stage2/spec3.png">
-      <p><i><strong>A4.1.6 - Gestion d'environnements de développement et de test</strong></i></p>
+      <p id="A416"><i><strong>A4.1.6 - Gestion d'environnements de développement et de test</strong></i></p>
       <img src="competences/stage2/intellijLogo.png" width="15%" height="15%">
       <p style="font-size: 90%">J'ai installer IntelliJ pour les développement du Back et Front. Pour simuler le server en local, j'ai mis en place Maven pour lancer le Back et mis en place Java pour y faire les développments.</p>
       <p style="font-size: 90%">Pour le Front la mise en place du système de compilation s'est faite grâce à NodeJS avec un <code>npm install</code> et <code>npm start</code>. <br>Pour gérer les redirections d'URL j'ai décidé d'utiliser NGinx. Par exemple si l'on tape <code>localhost/api</code>, grâce au fichier de configuration, je lui ai demandé de pointer sur <code>localhost:8000</code> : le port du Back.</p>
       <br>
       <img src="competences/stage2/environnementDev.png">
-      <p><i>A4.1.7 - Développement, utilisation ou adaptation de composants logiciels </i></p>
-      <p><i><strong>A4.1.8 - Réalisation des tests nécessaires à la validation d'éléments</strong></i></p>
+      <p id="A417"><i><strong>A4.1.7 - Développement, utilisation ou adaptation de composants logiciels </strong></i></p>
+      <p style="font-size: 90%">Le développement du front s'est éfféctué en plusieurs étapes. </p>
+      <p style="font-size: 90%">Tout d'abord, je devais récupérer les données des variables depuis l'extérieur grâce aux <code>@Input()</code> pour ensuite les utiliser. Ensuite j'ai créé des deux fonctions <code>fetchNotificationTimeline()</code> et <code>fetchNotificationList()</code>, elles permettent de récupérer les liste des activités et commencer à construire les notifications pour les afficher dans le composant.</p>
+      <p style="font-size: 90%">Par la suite, je devais gérer le format d'affichage (List ou Timeline) tout cela était géré dans le <code>ngOnInit()</code> c'est ce qui est éffectué lors de l'initialisation.</p>
+      <p style="font-size: 90%">Enfin, toutes les informations étaient envoyé aux composant chargé de la mise en forme de la timeline sous form de Tableau.</p>
+      <script src="https://gist.github.com/SebastienML/6ef9339ee2182d6aa1771af287d9d905.js"></script>
+      <p id="A418"><i><strong>A4.1.8 - Réalisation des tests nécessaires à la validation d'éléments</strong></i></p>
       <p style="font-size: 90%">J'ai mis en place des tests d'intégration permettant la validation du Back et pour valider les données. Cette étape est importante pour le développment du Front.</p>
       <script src="https://gist.github.com/SebastienML/8fa2a484694287f89dc158e356ffc81a.js"></script>
-      <p><i>A4.1.9 - Rédaction d'une documentation technique </i></p>
-      <p><i>A4.1.10 - Rédaction d'une documentation d'utilisation </i></p>
-      <p><i>A4.2.1 - Analyse et correction d'un dysfonctionnement, d'un problème </i></p>
-      <p><i><strong>A4.2.2 - Adaptation d'une solution applicative aux évolutions</strong></i></p>
+      <p id="A419"><i><strong>A4.1.9 - Rédaction d'une documentation technique </strong></i></p>
+      <p id="A4110"><i><strong>A4.1.10 - Rédaction d'une documentation d'utilisation </strong></i></p>
+      <p id="A421"><i><strong>A4.2.1 - Analyse et correction d'un dysfonctionnement, d'un problème</strong></i></p>
+      <p style="font-size: 90%">Un des derniers problèmes sur les tests que j'ai rencontré était le qu'une fonction pointait sur <i>null</i></p>
+      <img src="competences/stage2/errTest.png">
+      <p style="font-size: 90%">A la ligne 18, au lieu de demander directement null, il fallait tout simplement demander un storeHouse qui n'existait tout simplement pas pour qu'il puisse renvoyer un tableau vide.</p>
+      <script src="https://gist.github.com/SebastienML/b793635e42068062752e2c1181f05ab2.js"></script>
+      <p id="A422"><i><strong>A4.2.2 - Adaptation d'une solution applicative aux évolutions</strong></i></p>
       <p style="font-size: 90%">J'ai mis en place la nouvelle structure. Cette strcuture permet en effet de reduire la quantité de fichiers inutiles et surtout d'être un composant 100% générique. C'est à dire qu'appartir d'activité on peut désormais construire nimporte quelle timeline sans aucuns soucis.</p>
       <img src="competences/stage2/structure.png">
       <p style="font-size: 90%">Pour que le composant puisse être utilisé par les composants enfants, j'ai créé un module, cela permet en effet d'établir la communication de données'.</p>
       <script src="https://gist.github.com/SebastienML/c5bb541a34afdc6ba448bce29a4b4c4f.js"></script>
-      <p><i><strong>A4.2.3 - Réalisation des tests nécessaires à la mise en production</strong></i></p>
+      <p id="A423"><i><strong>A4.2.3 - Réalisation des tests nécessaires à la mise en production</strong></i></p>
       <p style="font-size: 90%">J'ai mis en place des tests d'intégration permettant la validation du Front et pour la bonne gestion des composants. Cette étape est importante pour valider le projet dans son ensemble. Ces tests sont ensuite exécuté par le chef de projet.</p>
       <script src="https://gist.github.com/SebastienML/87bd119549b848bc9cb10a326bc1ed5f.js"></script>
-      <p><i>A4.2.4 - Mise à jour d'une documentation technique </i></p>
+      <p style="font-size: 90%">Une fois avoir écrit les tests, je devais lancer la commande <code>yarn test</code> qui permettait de lancer la commande angular <code>ng test --watch=false</code>. Elle permet de lance un navigateur et executer les tests.</p>
+      <img src="competences/stage2/runTestKarma.png">
+      <p style="font-size: 90%">Ensuite dans le terminal de l'IDE, la batterie de tests génère un rapport d'éxecution.</p>
+      <img src="competences/stage2/rapportTestKarma.png">
+      <p id="A424"><i><strong>A4.2.4 - Mise à jour d'une documentation technique </strong></i></p>
       <div class="col-twelve">
         <br>
         <h3><u>CONCEPTION ET MAINTENANCE DE SOLUTIONS APPLICATIVES</u></h3>
 
       </div>
-      <p><i>A5.2.2   Veille technologique </i></p>
-      <p><i><strong>A5.2.3 - Repérage des compléments de formation ou d'auto-formation</strong></i></p>
+      <p id="A522"><i><strong>A5.2.2   Veille technologique </strong></i></p>
+      <p id="A523"><i><strong>A5.2.3 - Repérage des compléments de formation ou d'auto-formation</strong></i></p>
       <img src="competences/stage2/AngularTSLogo.png" width="38%" height="38%">
       <p style="font-size: 90%"><i>Le Data Binding avec Angular et TypeScript</i></p>
       <p style="font-size: 90%">Le databinding, c'est la communication entre votre code TypeScript et le template HTML qui est montré à l'utilisateur.</p>
@@ -264,7 +285,7 @@
       <img src="competences/stage2/SchemaInputOutputAngular.png" idth="80%" height="80%">
       <br>
       <br>
-      <p><i><strong>A5.2.4 - Étude d‘une technologie, d'un composant, d'un outils </strong></i></p>
+      <p id="A524"><i><strong>A5.2.4 - Étude d‘une technologie, d'un composant, d'un outils </strong></i></p>
       <img src="competences/stage2/AngularLogo.png" width="20%" height="20%">
       <p style="font-size: 90%"><i>Angular 7</i></p>
       <p style="font-size: 90%">Angular est un framework Javascript côté client qui permet de réaliser des applications de type "Single Page Application". Il est basé sur le concept de l'architecture MVC (Model View Controller) qui permet de séparer les données, les vues et les différentes actions que l'on peut effectuer.</p>
@@ -290,11 +311,8 @@
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Stage première année</h5>
+   			<h5>Stage deuxième année</h5>
    			<h1>En bref</h1>
-
-   			<p class="lead">Elaborer une stratégie de cybersécurité c’est construire la confiance dans un futur numérique. En effet, la cybersécurité n'est pas qu'une affaire de technologie.</p>
-
    		</div>
    	</div> <!-- /section-intro -->
 
@@ -308,9 +326,9 @@
 
 	            <div class="service-content">
 
-	            	 <h3>International</h3>
+	            	 <h3>Entreprise</h3>
 
-		            <p class="desc">Travailler dans le monde de l'informatique implique l'utilisation de l'anglais, c'est pourquoi aller travailler à l'étranger est un plus et permet de développer ce pilier de la communication international.
+		            <p class="desc">Travailler dans le monde de l'entreprise m'a permis de découvrir des métiers de l'informatique que je ne connaissais pas, discuter avec des personnes pour obtenir leurs points de vue vis-à-vis de mon projet professionnel : la Cybersecurité.
 	         		</p>
 
 	         	</div>
@@ -325,60 +343,13 @@
 
 	            	<h3>Développement</h3>
 
-		            <p class="desc">Avec l'accélération radicale de la transformation numérique, l'éclatement du SI, et l'adoption toujours plus rapide de nouvelles technologies, la surface d'attaque des cyberpirates a considérablement augmenté. En parallèle, avec le , la menace n'a jamais été aussi importante. pour toutes les entreprises. C'est pourquoi, développer des solutions de protections est un aspect tres important.
+		            <p class="desc"> Ce stage a permis au niveau du développement d'acquérir de nouvelles méthodes de développement, permettant un gain en autonomie mais aussi en adaptation fâce aux problèmes informatique.
 	         		</p>
 
 	            </div>
 
 			   </div> <!-- /service -->
 
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-toggles"></i></span>
-
-	            <div class="service-content">
-
-	            	<h3>Maitrise de l'environement LINUX</h3>
-
-		            <p class="desc">La maitrise d'un environement de système d'exploitation tel que linux permet de comprendre la logique de la sécurité dans des systèmes d'informations.
-	         		</p>
-
-	            </div>
-
-				</div> <!-- /service -->
-
-			   <div class="service">
-
-			   	<span class="icon"><i class="icon-image"></i></span>
-
-	            <div class="service-content">
-
-	            	<h3>Graphics Design</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p>
-
-	            </div>
-
-			   </div> <!-- /service -->
-
-			   <div class="service">
-
-			   	<span class="icon"><i class="icon-chat"></i></span>
-
-	            <div class="service-content">
-
-	            	 <h3>Consultancy</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p>
-
-	            </div>
-
-			   </div> <!-- /service -->
-
-	      </div> <!-- /services-list -->
 
    	</div> <!-- /services-content -->
 
