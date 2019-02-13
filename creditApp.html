@@ -58,9 +58,9 @@
 
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
-						<li><a class="smoothscroll"  href="#about" title="">A propos</a></li>
 						<li><a class="smoothscroll"  href="#resume" title="">Le projet</a></li>
 						<li><a class="smoothscroll"  href="#portfolio" title="">Compétences acquises</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">En bref</a></li>
 						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
 					</ul>
 				</nav>
@@ -80,14 +80,13 @@
 
    			<div class="col-twelve">
 
-	   			<h5>"TP BTS SIO"</h5>
+	   			<h5>"TP personnel"</h5>
 
-          <h1>GSB Appli-Frais</h1>
+          <h1>Application Crédit</h1>
 
 	   			<p class="intro-position">
-	   				<span>LOUIS ARMAND</span>
-	   				<span>Paris (75)</span>
-            <span>PHP</span>
+            <span>C#</span>
+            <span>WindowsForm</span>
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">En savoir plus</a>
@@ -104,30 +103,6 @@
       </ul> <!-- /intro-social -->
 
    </section> <!-- /intro -->
-
-
-   <!-- about section
-   ================================================== -->
-   <section id="about">
-
-   	<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>A propos</h5>
-   			<h1>Présentation de l'entreprise</h1>
-
-   			<div class="intro-info">
-
-   				<img src="competences/GSBapplifrais/gsbLogo.jpeg">
-
-   				<p class="lead">"Le laboratoire GSB envoie dans la France entière des visiteurs médicaux dont les frais de déplacement, de restauration et d’hébergement (ainsi que d’autres types de dépenses qui n’ont pas de montant forfaitaire) sont remboursables."</p>
-   			</div>
-
-        <img src="competences/GSBapplifrais/pills.jpg">
-
-   		</div>
-   	</div> <!-- /section-intro -->
-
    </section> <!-- /process-->
 
 
@@ -139,14 +114,20 @@
    		<div class="col-twelve">
 
    			<h5>Le projet</h5>
-   			<h1>GSB Appli-Frais.</h1>
+   			<h1>Calcul de crédit.</h1>
 
-   			<p class="lead">L’application permet de créer en ligne des fiches de demande de remboursement et d’assurer le suivi des remboursements de ces dépenses. Elle comporte deux modules, l’un destiné aux visiteurs médicaux (qui créeront les fiches), l’autre au service comptable (qui valident ou non les fiches de frais).</p>
+   			<p class="lead">Le projet consiste a réaliser un calcul de crédit en fonction de plusieurs paramètres. En fonction de la durée de l'emprunt et du salaire, le logiciel va pour calculer tout seul la chaque mensualités tant bien que le prix total du crédit.</p>
 
    		</div>
    	</div> <!-- /section-intro-->
 
-   	<div class="row resume-timeline">>
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+        <br>
+        <span>Il affiche aussi la courbe des intérêts en fonction des du montant, mais aussi un tableau avec le détails de chaque mensualité.</span>
+        <br>
+   		</div> <!-- /resume-header -->
 	</section> <!-- /features -->
 
 
@@ -155,46 +136,87 @@
 	<section id="portfolio">
 
 		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>"TP BTS SIO"</h5>
-   			<h1>Compétences acquises.</h1>
-        <br>
-        <h3><u>PRODUCTION DE SERVICE</u></h3>
-
-   		</div>
-      <p><i>A1.1.1 - Analyse du cahier des charges d'un service à produire </i></p>
-      <embed src="competences/GSBapplifrais/LEJEUNE_SEBASTIEN_GSB.pdf" type="application/pdf" width="100%" height="600px" />
-      <p><i>A1.1.3 - Étude des exigences liées à la qualité attendue d'un service </i></p>
-      <img src="competences/GSBapplifrais/gsb.png">
-      <p><i>A1.2.1 - Élaboration et présentation d'un dossier de choix de solution </i></p>
-      <img src="competences/GSBapplifrais/analyseCDC.png">
-
       <div class="col-twelve">
         <br>
         <h3><u>CONCEPTION ET MAINTENANCE DE SOLUTIONS APPLICATIVES</u></h3>
 
    		</div>
-      <p><i>A4.1.1 - Proposition d'une solution applicative </i></p>
-      <img src="competences/GSBapplifrais/gsb_application.jpg">
-      <p><i>A4.1.2 - Conception ou adaptation de l'interface utilisateur d'une solution</i></p>
-      <img src="competences/GSBapplifrais/visteurComptableGSB.png">
-      <p><i>A4.1.3 - Conception ou adaptation d'une base de données </i></p>
-      <img src="competences/GSBapplifrais/modifTableVisiteurGSB.png">
-      <p><i>A4.1.6 - Gestion d'environnements de développement et de test </i></p>
-      <img src="competences/GSBapplifrais/gsbVisualCode.png">
-      <p><i>A4.2.1 - Analyse et correction d'un dysfonctionnement, d'un problème </i></p>
-      <img src="competences/GSBapplifrais/phperror.png">
+      <p id="A411"><i><strong>A4.1.1 - Proposition d'une solution applicative </strong></i></p>
+      <img src="competences/appCredit/credit.png">
+      <p id="A412"><i><strong>A4.1.2 - Conception ou adaptation de l'interface utilisateur d'une solution</strong></i></p>
+      <img src="competences/appCredit/credit.png">
+      <p id="A415"><i><strong>A4.1.5 - Prototypage de composants logiciels</strong></i></p>
+      <img src="competences/appCredit/creditProtorype.png">
+      <p id="A416"><i><strong>A4.1.6 - Gestion d'environnements de développement et de test</strong></i></p>
+      <img src="competences/appCredit/creditDev.png">
+      <p id="A417"><i><strong>A4.1.7 - Développement, utilisation ou adaptation de composants logiciels</strong></i></p>
+      <script src="https://gist.github.com/SebastienML/eec1e152bdec120e95bb2903e5a5d64d.js"></script>
+
       <div class="col-twelve">
         <br>
-        <h3><u>CONCEPTION ET MAINTENANCE DE SOLUTIONS APPLICATIVES</u></h3>
+        <h3><u>GESTION DU PATRIMOINE INFORMATIQUE</u></h3>
 
       </div>
-      <p><i>A5.2.4 - Étude d‘une technologie, d'un composant, d'un outils </i></p>
-      <img src="competences/GSBapplifrais/etudeSessionPHP.png">
+      <p id="A522"><i><strong>A5.2.3 - Repérage des compléments de formation ou d'auto-formation</strong></i></p>
+      <img src="competences/appCredit/chart.png">
+      <p id="A523"><i><strong>A5.2.4 - Étude d‘une technologie, d'un composant, d'un outils</strong></i></p>
+      <img src="competences/appCredit/datagridinfos.png">
+
    	</div> <!-- /portfolio-content -->
 
 	</section> <!-- /portfolio -->
+
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Stage deuxième année</h5>
+   			<h1>En bref</h1>
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">
+
+	      		<span class="icon"><i class="icon-earth"></i></span>
+
+	            <div class="service-content">
+
+	            	 <h3>Entreprise</h3>
+
+		            <p class="desc">Travailler dans le monde de l'entreprise m'a permis de découvrir des métiers de l'informatique que je ne connaissais pas, discuter avec des personnes pour obtenir leurs points de vue vis-à-vis de mon projet professionnel : la Cybersecurité.
+	         		</p>
+
+	         	</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-window"></i></span>
+
+	            <div class="service-content">
+
+	            	<h3>Développement</h3>
+
+		            <p class="desc"> Ce stage a permis au niveau du développement d'acquérir de nouvelles méthodes de développement, permettant un gain en autonomie mais aussi en adaptation fâce aux problèmes informatique.
+	         		</p>
+
+	            </div>
+
+			   </div> <!-- /service -->
+
+
+   	</div> <!-- /services-content -->
+
+	</section> <!-- /services -->
+
 
    <!-- contact
    ================================================== -->
