@@ -302,7 +302,7 @@ animation-delay: .8s;
 }
 .theme-main-menu .navbar-nav>li>a {
   text-transform: uppercase;
-  color:#000000;
+  color:#fff;
   font-weight: 700;
   background: transparent;
   padding: 9px 15px;
